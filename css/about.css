@@ -1,0 +1,140 @@
+.about-hero {
+  position: relative;
+  display: grid;
+  min-height: 630px;
+  grid-template-columns: 1fr .8fr;
+  align-items: center;
+  gap: 90px;
+  padding-block: 80px 105px;
+}
+
+.about-copy h1 {
+  margin-bottom: 26px;
+  font-size: clamp(3.75rem, 8vw, 6.875rem);
+}
+
+.paper-note {
+  max-width: 520px;
+  padding: 25px 28px;
+  font-size: 1rem;
+  line-height: 1.7;
+  transform: rotate(-1deg);
+}
+
+.paper-note p:last-child {
+  margin-bottom: 0;
+}
+
+.hand-note {
+  margin: 23px 0 0 16px;
+  color: var(--yellow);
+  font-family: var(--display);
+  font-size: 0.75rem;
+  font-style: italic;
+  transform: rotate(-2deg);
+}
+
+.about-portrait {
+  width: min(100%, 410px);
+  aspect-ratio: .84;
+  justify-self: center;
+  transform: rotate(4deg);
+}
+
+.about-sticker {
+  top: 18%;
+  right: 4%;
+}
+
+.about-values {
+  padding-block: 65px 105px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.value-card {
+  min-height: 220px;
+  padding: 25px;
+  color: var(--ink);
+}
+
+.value-blue {
+  background: var(--blue-light);
+  transform: rotate(-1deg);
+}
+
+.value-yellow {
+  background: var(--yellow);
+  transform: rotate(1deg);
+}
+
+.value-pink {
+  background: var(--pink);
+  transform: rotate(-1deg);
+}
+
+.value-number {
+  display: block;
+  margin-bottom: 33px;
+  font-size: 0.75rem;
+}
+
+.value-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.5625rem;
+}
+
+.value-card p {
+  margin-bottom: 0;
+  font-size: 0.75rem;
+}
+
+.about-education {
+  background: var(--red-dark);
+}
+
+.education-layout {
+  display: grid;
+  min-height: 480px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 90px;
+  padding-block: 75px;
+}
+
+.education-layout h2 {
+  font-size: clamp(2.625rem, 6vw, 4.375rem);
+}
+
+.education-copy {
+  display: grid;
+  grid-template-columns: 1fr .8fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.education-copy > ul {
+  margin: 0;
+  padding-left: 1.2em;
+  color: var(--cream);
+  font-size: 1rem;
+}
+
+.small-photo {
+  width: 100%;
+  aspect-ratio: .82;
+  transform: rotate(3deg);
+}
+
+.about-contact {
+  padding-block: 95px 110px;
+  text-align: center;
+}
+
+.about-contact h2 {
+  margin-bottom: 24px;
+}

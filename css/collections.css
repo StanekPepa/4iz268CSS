@@ -1,0 +1,123 @@
+.collection-heading {
+  max-width: 100%;
+}
+
+.collection-title-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 4vw, 48px);
+}
+
+.collection-title-row h1 {
+  margin-bottom: 20px;
+}
+
+.heading-sticker {
+  position: static;
+  flex: 0 0 auto;
+  transform: rotate(7deg);
+}
+
+.collections-main {
+  padding-bottom: 100px;
+}
+
+.collection-list {
+  display: grid;
+  gap: 105px;
+}
+
+.collection-entry {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  gap: clamp(45px, 8vw, 110px);
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgb(255 242 214 / 30%);
+}
+
+.collection-reverse .collection-art {
+  order: 2;
+}
+
+.collection-reverse .collection-copy {
+  order: 1;
+}
+
+.collection-art {
+  min-width: 0;
+}
+
+.collection-main-photo {
+  width: 100%;
+  aspect-ratio: 1.05;
+  transform: rotate(-2deg);
+}
+
+.mini-photo-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 13px;
+  margin-top: 22px;
+}
+
+.mini-photo-row-short {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 70%;
+}
+
+.mini-photo-row .paper-photo {
+  height: auto;
+  aspect-ratio: auto;
+}
+
+.mini-photo-row .paper-photo > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.mini-photo-row .slot-label {
+  padding: 4px;
+  font-size: 0.75rem;
+}
+
+.collection-copy h2 {
+  margin-bottom: 22px;
+  font-size: clamp(2.8125rem, 6.3vw, 4.875rem);
+  text-transform: uppercase;
+}
+
+.collection-copy > p:not(.eyebrow):not(.materials):not(.collection-deck) {
+  max-width: 420px;
+  color: var(--cream);
+  font-size: 1rem;
+}
+
+.collection-copy .collection-deck {
+  color: var(--yellow);
+  font-family: var(--display);
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.materials {
+  margin-block: 20px;
+  color: var(--cream);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.process-note {
+  max-width: 380px;
+  margin-top: 27px;
+  padding: 17px 20px;
+  font-size: 0.75rem;
+}
+
+.process-note p:last-child {
+  margin-bottom: 0;
+}

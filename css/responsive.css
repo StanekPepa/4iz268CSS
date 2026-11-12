@@ -1,0 +1,591 @@
+@media (max-width: 800px) {
+  .page-wrap {
+    width: min(100% - 44px, var(--page-width));
+  }
+
+  .site-header {
+    width: calc(100% - 44px);
+    min-height: 74px;
+  }
+
+  .home-hero {
+    min-height: auto;
+    grid-template-columns: 1fr .8fr;
+    gap: 30px;
+    padding-block: 75px 85px;
+  }
+
+  .hero-sticker {
+    top: 18%;
+    right: 5%;
+  }
+
+  .hero-scribble {
+    right: -3%;
+  }
+
+  .feature-grid {
+    gap: 38px;
+  }
+
+  .feature-card-wide {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card-blue-hour {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card-wide .paper-photo {
+    aspect-ratio: 1.05;
+  }
+
+  .sketch-layout {
+    gap: 28px;
+  }
+
+  .about-hero {
+    min-height: 550px;
+    gap: 42px;
+  }
+
+  .education-layout {
+    gap: 40px;
+  }
+
+  .collection-entry {
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .page-wrap {
+    width: calc(100% - 36px);
+  }
+
+  .site-header {
+    width: calc(100% - 36px);
+    min-height: 68px;
+  }
+
+  .wordmark {
+    font-size: 1.6875rem;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+  }
+
+  .menu-button {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    align-content: center;
+    justify-items: end;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  .menu-button span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: var(--yellow);
+    transition: width 180ms ease, transform 180ms ease;
+  }
+
+  .menu-button span:last-child {
+    width: 18px;
+  }
+
+  .menu-toggle:checked + .menu-button span:first-child {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .menu-toggle:checked + .menu-button span:last-child {
+    width: 26px;
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  .menu-toggle:focus-visible + .menu-button {
+    outline: 2px solid var(--yellow);
+    outline-offset: 3px;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 0;
+    left: 0;
+    display: grid;
+    gap: 0;
+    padding: 0 18px;
+    background: var(--red-dark);
+    box-shadow: 0 12px 18px rgb(38 5 5 / 28%);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
+  }
+
+  .menu-toggle:checked ~ .site-nav {
+    padding-block: 10px;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .site-nav a {
+    padding: 13px 0;
+    border-bottom: 1px solid rgb(255 242 214 / 15%);
+  }
+
+  .site-nav a::after {
+    display: none;
+  }
+
+  h1 {
+    font-size: clamp(3.25rem, 14vw, 4.75rem);
+  }
+
+  h2 {
+    font-size: clamp(2.375rem, 10vw, 3.375rem);
+  }
+
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding-block: 58px 75px;
+  }
+
+  .hero-copy {
+    padding-bottom: 0;
+  }
+
+  .hero-copy h1 {
+    margin-bottom: 17px;
+  }
+
+  .hero-intro {
+    max-width: 300px;
+    font-size: 1rem;
+  }
+
+  .hero-photo {
+    width: min(78%, 340px);
+    aspect-ratio: 1 / 1.05;
+    justify-self: center;
+  }
+
+  .hero-sticker {
+    top: 50%;
+    right: 0;
+    padding: 11px 13px;
+    font-size: 1rem;
+  }
+
+  .hero-scribble {
+    top: 45%;
+    right: auto;
+    left: 2%;
+    font-size: 1.75rem;
+  }
+
+  .hero-index {
+    bottom: 23px;
+  }
+
+  .strip-inner {
+    min-height: 94px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .strip-inner p {
+    font-size: 1rem;
+  }
+
+  .home-feature {
+    padding-block: 65px 75px;
+  }
+
+  .section-heading {
+    margin-bottom: 25px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .feature-card-wide {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card .paper-photo,
+  .feature-card-wide .paper-photo {
+    aspect-ratio: 1.08;
+  }
+
+  .feature-note {
+    width: min(90%, 360px);
+    justify-self: center;
+  }
+
+  .sketch-layout {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-block: 62px 70px;
+  }
+
+  .sketch-tiles {
+    min-height: 310px;
+    margin-top: 12px;
+  }
+
+  .sketch-tiles .paper-photo {
+    width: 46%;
+  }
+
+  .tile-two {
+    left: 43%;
+  }
+
+  .tile-three {
+    top: 42%;
+  }
+
+  .home-about {
+    padding-block: 68px 75px;
+  }
+
+  .footer-inner {
+    min-height: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+    padding-block: 28px;
+  }
+
+  .footer-inner > p {
+    font-size: 1.25rem;
+  }
+
+  .footer-links {
+    gap: 15px;
+  }
+
+  .page-heading {
+    padding-block: 58px 40px;
+  }
+
+  .page-heading h1 {
+    font-size: clamp(2.875rem, 12vw, 4.25rem);
+  }
+
+  .page-heading > p:last-child {
+    max-width: 360px;
+    font-size: 0.75rem;
+  }
+
+  .gallery-main {
+    padding-bottom: 70px;
+  }
+
+  .art-section {
+    padding-block: 12px 45px;
+  }
+
+  .art-grid,
+  .art-grid-other {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 27px 14px;
+  }
+
+  .art-card.art-tall .paper-photo {
+    aspect-ratio: .86;
+  }
+
+  .art-card figcaption {
+    margin-top: 8px;
+    font-size: 0.75rem;
+  }
+
+  .about-hero {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-block: 58px 72px;
+  }
+
+  .about-copy h1 {
+    margin-bottom: 21px;
+    font-size: clamp(3.5625rem, 15vw, 4.875rem);
+  }
+
+  .paper-note {
+    padding: 20px;
+    font-size: 0.75rem;
+  }
+
+  .about-portrait {
+    width: min(78%, 330px);
+  }
+
+  .about-sticker {
+    top: auto;
+    right: 2%;
+    bottom: 10%;
+  }
+
+  .about-values {
+    padding-block: 46px 72px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 19px;
+  }
+
+  .value-card {
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .value-number {
+    margin-bottom: 18px;
+  }
+
+  .education-layout {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-block: 55px;
+  }
+
+  .education-copy {
+    grid-template-columns: 1fr .72fr;
+    gap: 15px;
+  }
+
+  .education-copy > ul {
+    font-size: 0.75rem;
+  }
+
+  .about-contact {
+    padding-block: 65px 75px;
+  }
+
+  .collection-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .heading-sticker {
+    margin: 0 0 8px 8px;
+    font-size: 1rem;
+  }
+
+  .collections-main {
+    padding-bottom: 70px;
+  }
+
+  .collection-heading {
+    padding-bottom: 75px;
+  }
+
+  .collection-list {
+    gap: 58px;
+  }
+
+  .collection-entry {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-bottom: 55px;
+  }
+
+  .collection-reverse .collection-art,
+  .collection-reverse .collection-copy {
+    order: initial;
+  }
+
+  .collection-main-photo {
+    aspect-ratio: 1.05;
+  }
+
+  .mini-photo-row {
+    gap: 9px;
+    margin-top: 16px;
+  }
+
+  .collection-copy h2 {
+    margin-bottom: 17px;
+    font-size: clamp(2.8125rem, 12vw, 4.0625rem);
+  }
+
+  .process-note {
+    margin-top: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:root {
+    scroll-behavior: auto;
+  }
+
+  html:root *,
+  html:root *::before,
+  html:root *::after {
+    transition-duration: .01ms;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #111;
+    font-size: 11pt;
+  }
+
+  * {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #111 !important;
+    text-shadow: none !important;
+  }
+
+  .page-wrap,
+  .site-header {
+    width: auto;
+  }
+
+  .site-header {
+    min-height: 0;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #111;
+  }
+
+  .site-nav,
+  .menu-toggle,
+  .menu-button,
+  .sticker,
+  .scribble {
+    display: none !important;
+  }
+
+  .home-hero,
+  .feature-grid,
+  .feature-card,
+  .sketch-layout,
+  .about-hero,
+  .values-grid,
+  .education-layout,
+  .education-copy,
+  .collection-entry,
+  .art-grid,
+  .art-grid-fashion,
+  .art-grid-other {
+    display: block;
+    min-height: 0;
+  }
+
+  .home-hero,
+  .home-feature,
+  .home-about,
+  .about-hero,
+  .about-values,
+  .about-contact,
+  .page-heading,
+  .art-section,
+  .sketch-layout,
+  .education-layout {
+    padding-block: 1em;
+  }
+
+  .site-header,
+  .site-footer {
+    padding-block: 0.75em;
+  }
+
+  .paper-photo {
+    max-width: 100%;
+    margin-block: 0.75em;
+    padding: 2px;
+    transform: none !important;
+  }
+
+  .sketch-tiles {
+    position: static;
+    min-height: 0;
+  }
+
+  .sketch-tiles .paper-photo {
+    position: static;
+    width: min(100%, 300px);
+  }
+
+  .hero-index {
+    position: static;
+  }
+
+  .paper-photo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .photo-caption {
+    position: static;
+    display: block;
+    margin-top: 0.4em;
+    transform: none;
+  }
+
+  .button {
+    padding: 0;
+    text-decoration: underline;
+  }
+
+  .footer-inner {
+    min-height: 0;
+  }
+
+  .footer-links {
+    gap: 1em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-inside: avoid;
+    break-after: avoid;
+  }
+
+  figure,
+  .art-card,
+  .process-note {
+    break-inside: avoid;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  @page {
+    margin: 1.5cm;
+  }
+}
