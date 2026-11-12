@@ -105,15 +105,25 @@
     transition: width 180ms ease, transform 180ms ease;
   }
 
-  .menu-button span:last-child {
+  .menu-button span:nth-child(2) {
     width: 18px;
+  }
+
+  .menu-button .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
   }
 
   .menu-toggle:checked + .menu-button span:first-child {
     transform: translateY(4px) rotate(45deg);
   }
 
-  .menu-toggle:checked + .menu-button span:last-child {
+  .menu-toggle:checked + .menu-button span:nth-child(2) {
     width: 26px;
     transform: translateY(-4px) rotate(-45deg);
   }
