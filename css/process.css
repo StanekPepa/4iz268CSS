@@ -1,0 +1,187 @@
+.process-main {
+  padding-bottom: 105px;
+}
+
+.process-heading {
+  max-width: 900px;
+}
+
+.process-heading h1 {
+  max-width: 850px;
+  font-size: clamp(3.125rem, 7vw, 5.875rem);
+}
+
+.process-intro,
+.process-materials {
+  display: grid;
+  grid-template-columns: 1fr .85fr;
+  align-items: center;
+  gap: clamp(36px, 8vw, 100px);
+  padding-block: 35px 100px;
+}
+
+.process-intro-copy h2,
+.process-materials-copy h2 {
+  margin-bottom: 22px;
+  font-size: clamp(2.375rem, 5.2vw, 4.25rem);
+}
+
+.process-intro-copy > p:not(.eyebrow),
+.process-materials-copy > p:not(.eyebrow) {
+  max-width: 510px;
+  color: var(--cream);
+}
+
+.process-intro-copy .button {
+  margin-top: 8px;
+}
+
+.process-image,
+.process-detail-image {
+  width: min(100%, 430px);
+  justify-self: center;
+}
+
+.process-image {
+  transform: rotate(2deg);
+}
+
+.process-detail-image {
+  transform: rotate(-2deg);
+}
+
+.process-stages {
+  padding-block: 25px 100px;
+}
+
+.process-stages .section-heading {
+  max-width: 760px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.process-card {
+  min-height: 250px;
+  padding: 24px;
+  color: var(--ink);
+}
+
+.process-card-blue {
+  background: var(--blue-light);
+  transform: rotate(-1deg);
+}
+
+.process-card-yellow {
+  background: var(--yellow);
+  transform: rotate(1deg);
+}
+
+.process-card-pink {
+  background: var(--pink);
+  transform: rotate(-1deg);
+}
+
+.process-number {
+  display: block;
+  margin-bottom: 35px;
+  font-size: 0.75rem;
+}
+
+.process-card h3 {
+  margin-bottom: 14px;
+  font-size: 1.5625rem;
+}
+
+.process-card p {
+  margin-bottom: 0;
+  font-size: 0.875rem;
+}
+
+.process-materials {
+  grid-template-columns: .85fr 1fr;
+  padding-block: 0;
+}
+
+.process-materials-copy .button {
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .process-intro,
+  .process-materials {
+    gap: 35px;
+  }
+
+  .process-grid {
+    gap: 16px;
+  }
+
+  .process-card {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .process-main {
+    padding-bottom: 70px;
+  }
+
+  .process-heading h1 {
+    font-size: clamp(2.875rem, 12vw, 4.25rem);
+  }
+
+  .process-intro,
+  .process-materials {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-block: 15px 70px;
+  }
+
+  .process-image,
+  .process-detail-image {
+    width: min(82%, 350px);
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .process-card {
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .process-number {
+    margin-bottom: 18px;
+  }
+
+  .process-stages {
+    padding-block: 0 70px;
+  }
+}
+
+@media print {
+  .process-main {
+    padding-bottom: 0;
+  }
+
+  .process-intro,
+  .process-materials,
+  .process-grid {
+    display: block;
+    padding-block: 0.75em;
+  }
+
+  .process-card {
+    min-height: 0;
+    margin-block: 0.75em;
+  }
+}
